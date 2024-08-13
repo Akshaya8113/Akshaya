@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- Added DOCTYPE declaration -->
+<html lang="en"> <!-- Added lang attribute -->
+    <head>
+        <meta charset="UTF-8"> <!-- Added charset meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected "with" to "width" -->
+        <title>College Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo5.png" alt="College Logo"></a> <!-- Added alt attribute to img tag -->
+                <div class="nav-links" id="navlinks"> <!-- Moved the closing div tag below the ul tag -->
+                    <i class="fas fa-window-close"  onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li> <!-- Updated href to use a placeholder link (#) -->
+                        <li><a href="About.html.html">ABOUT</a></li>
+                        <li><a href="courses.html.html">COURSES</a></li>
+                        <li><a href="Blogs.html.html">BLOGS</a></li>
+                        <li><a href="contact.html.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showmenu()"></i>
+            </nav>
+        <h1> About Us </h1> 
+    </section>
+   
+<!-------------About us content---------->
+<section class="About-us">
+ <div class="row">
+    <div class="about-col">
+        <h1> We the world's largest University</h1>
+        <p>We are proud to be the world’s largest university, offering a diverse range of programs that cater to students from every corner of the globe. Our expansive network of campuses and online courses ensures that education is accessible to all. Committed to excellence, we empower millions to achieve their academic and professional goals.</p>
+        <a href="index.html" class="hero-btn red-btn">VISIT NOW</a>   
+    </div>
+    <div class="about-col">
+        <img src="Images/about.png">
+    </div>
+ </div>
+</section>
+
+<section class="Footer">
+       <h4>About Us</h4>
+          <p>We empower students with cutting-edge technical skills through industry-focused courses in programming and mechanical design. Our mission is to bridge the gap between education and employment with hands-on training and placement assistance..</p>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Akshaya</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------Java script usesd here-------->
+        <script>
+            var navlinks = document.getElementById("navlinks")
+            
+            function showmenu() {
+                navlinks.style.right = "0";
+            }
+            function hidemenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

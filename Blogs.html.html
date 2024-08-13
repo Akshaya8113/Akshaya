@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- Added DOCTYPE declaration -->
+<html lang="en"> <!-- Added lang attribute -->
+    <head>
+        <meta charset="UTF-8"> <!-- Added charset meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected "with" to "width" -->
+        <title>College Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/logo5.png" alt="College Logo"></a> <!-- Added alt attribute to img tag -->
+                <div class="nav-links" id="navlinks"> <!-- Moved the closing div tag below the ul tag -->
+                    <i class="fas fa-window-close"  onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li> <!-- Updated href to use a placeholder link (#) -->
+                        <li><a href="About.html.html">ABOUT</a></li>
+                        <li><a href="courses.html.html">COURSES</a></li>
+                        <li><a href="Blogs.html.html">BLOGS</a></li>
+                        <li><a href="contact.html.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showmenu()"></i>
+            </nav>
+        <h1> Our Certificates and online programs for 2024</h1> 
+    </section>
+    <!----------------Blogs-------->
+<section class="Blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="Images/certificate.png">
+            <h2>Our Certificates and online programs for 2024</h2>
+            <p>Explore our 2024 certificates and online programs, designed to advance your skills with flexible learning options and industry-recognized credentials.</p>
+            <br>
+            <p>Gain cutting-edge skills in tech, engineering, and design, with flexible learning tailored to your pace. Unlock your potential and enhance your career today!</p>
+            <br>
+            <p>Enhance your skills and advance your career with our cutting-edge certificates and online programs in 2024. Designed for aspiring professionals, our courses cover key areas such as web development, data analytics, artificial intelligence, and CADD for mechanical engineering. Each program is crafted with industry relevance in mind, offering hands-on experience and expert guidance. With flexible online learning options, you can study at your own pace, anytime, anywhere. Upon completion, receive a recognized certificate that boosts your credentials and opens doors to new opportunities in your field.</p>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter E-mail Id">
+                    <textarea row="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">SUBMIT</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>50</span>
+            </div>
+            <div>
+                <span>Data science</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>FullStack</span>
+                <span>55</span>
+            </div>
+            <div>
+                <span>Software Testing</span>
+                <span>80</span>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!----------------Footer-------->
+<section class="Footer">
+       <h4>About Us</h4>
+          <p>We empower students with cutting-edge technical skills through industry-focused courses in programming and mechanical design. Our mission is to bridge the gap between education and employment with hands-on training and placement assistance..</p>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Akshaya</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------Java script usesd here-------->
+        <script>
+            var navlinks = document.getElementById("navlinks")
+            
+            function showmenu() {
+                navlinks.style.right = "0";
+            }
+            function hidemenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

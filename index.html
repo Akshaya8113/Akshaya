@@ -1,0 +1,223 @@
+<!DOCTYPE html> <!-- Added DOCTYPE declaration -->
+<html lang="en"> <!-- Added lang attribute -->
+    <head>
+        <meta charset="UTF-8"> <!-- Added charset meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected "with" to "width" -->
+        <title>College Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo5.png" alt="College Logo"></a> <!-- Added alt attribute to img tag -->
+                <div class="nav-links" id="navlinks"> <!-- Moved the closing div tag below the ul tag -->
+                    <i class="fas fa-window-close"  onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li> <!-- Updated href to use a placeholder link (#) -->
+                        <li><a href="About.html.html">ABOUT</a></li>
+                        <li><a href="courses.html.html">COURSES</a></li>
+                        <li><a href="Blogs.html.html">BLOGS</a></li>
+                        <li><a href="contact.html.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <section class="search"> 
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search..." name="query" class="search-input">
+                        <button type="submit" class="search-button">Search</button>
+                    </form>
+                </div>
+            </section>
+        <div class="text-box">
+            <h1>Empowering Minds, Shaping Futures</h1>
+            <p>Reflects our commitment to fostering intellectual growth and innovation. We equip students with the knowledge and skills to excel in a dynamic world. <br>By nurturing critical thinking and creativity, we prepare future leaders to make a lasting impact.</p>
+            <a href="About.html.html" class="hero-btn">Explore to know more</a>
+            
+        </div>    
+        </section>
+
+           <!-----courses-->
+           <section class="courses">
+               <h1> Courses We Offer</h1>
+               <p> Full Stack , UI-UX Designing , Software Testing  </p>
+
+               <div class="row">
+                <div class="course-col">
+                    <h3> Basic </h3>
+                    <p> The "Basic" course level is designed for beginners, offering foundational knowledge and skills. It's perfect for those starting out or looking to build a strong understanding of core concepts.</p>
+                </div>
+                <div class="course-col">
+                    <h3> Intermediate </h3>
+                    <p> This intermediate course is designed for learners with a basic understanding of the subject, aiming to deepen their knowledge and enhance their skills. Ideal for those looking to build on foundational concepts and tackle more advanced topics.</p>
+                </div>
+
+                <div class="course-col">
+                    <h3> Advance </h3>
+                    <p> This advanced course is designed for individuals with foundational knowledge, aiming to deepen their expertise and master complex concepts. It challenges students with in-depth content and hands-on projects to prepare them for high-level professional roles.</p>
+                </div>
+
+
+               </div>
+
+
+  
+           </section>
+            <!-----Infrastructure-------->
+           <section class="Infrastructure">
+               <h1> Our Robust Infrastructure</h1>
+               <p> Our robust infrastructure ensures reliability, efficiency, and scalability to support all your needs seamlessly.</p>
+           
+                 <div class="row">
+                    <div class="infrastructure-col">
+                        <img src="Images/infra1.png">
+                        <div class="layer">
+                            <h3>Coimbatore</h3>
+                        </div>
+                    </div>
+                       <div class="infrastructure-col">
+                            <img src="Images/infra2.png">
+                            <div class="layer">
+                                <h3>Chennai</h3>
+                            </div>
+                        </div>
+                           <div class="infrastructure-col">
+                                <img src="Images/infra3.png">
+                                <div class="layer">
+                                    <h3>Banglore</h3>
+                                </div>
+                            </div>
+                 </div>
+           </section>
+<!----------------Facilities-------->
+<section class="Facilities">
+    <h1> Our Facilities </h1>
+    <p>Our facilities offer state-of-the-art resources and a collaborative environment to enhance your learning experience.</p>
+      
+      <div class="row">
+         <div class="facilities-col">
+            <img src="Images/library.png">
+            <h3>World Class Library</h3>
+            <p>Our world-class library provides extensive resources and a serene atmosphere for research and learning.</p>
+         </div>
+         <div class="facilities-col">
+            <img src="Images/basketball1.png">
+            <h3>Largest Play Ground</h3>
+            <p>Our largest playground offers expansive space for sports, recreation, and outdoor activities.</p>
+         </div>
+         <div class="facilities-col">
+            <img src="Images/foodcourt1.png">
+            <h3>Nutritious Food Court</h3>
+            <p>Our Nutritious Food Court serves delicious, wholesome meals that fuel your body and mind.</p>
+         </div>
+
+      </div>
+
+</section>
+
+<!----------------Testimonials-------->
+<section class="Testimonials">
+    <h1> What Our Students Say!! </h1>
+    <p>Hear what our students have to say about their transformative experiences at our institute.</p>
+     <div class="row">
+        <div class="Testimonials-col">
+            <img src="Images/student1.png">
+            <div>
+                <h3>Saranya E</h3>
+                <p>Placements are good, faculty are awesome, Campus provides good environment to student and everyone are so friendly with each other.All the students are cooperative and supportive. <br>I like the most about this college is the big campus and their vision of being the best institution of choice.</p>
+                
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div> 
+            <div class="Testimonials-col">
+                <img src="Images/student2.png">
+                <div>
+                    <h3>Vijay A</h3>
+                    <p>My time at this college has been incredible! The faculty is not only knowledgeable but also truly supportive, always encouraging us to reach our full potential. The hands-on learning opportunities and modern facilities have prepared me well for my future career.</p>
+                    
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+                <div class="Testimonials-col">
+                    <img src="Images/student3.png">
+                    <div>
+                        <h3>Merlin J</h3>
+                        <p>Attending this college has been a life-changing experience.The diverse courses and practical exposure have broadened my horizons, and the campus environment is both vibrant and welcoming. I’m grateful for the friendships and skills I’ve gained here.</p>
+                        
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                        
+
+                    </div>
+        </div>
+     </div>
+</section>
+
+<!---------------Call to Action-------->
+
+<section class="cta">
+   <h1> Enroll for various courses</h1>
+
+   <a href="contact.html.html" class="hero-btn"> CONTACT US </a>
+
+</section>
+
+<!---------------Footer-------->
+
+<section class="Footer">
+       <h4>About Us</h4>
+          <p>We empower students with cutting-edge technical skills through industry-focused courses in programming and mechanical design. Our mission is to bridge the gap between education and employment with hands-on training and placement assistance..</p>
+          <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="far fa-heart"></i> by Akshaya</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!----------------Java script usesd here-------->
+        <script>
+            var navlinks = document.getElementById("navlinks")
+            
+            function showmenu() {
+                navlinks.style.right = "0";
+            }
+            function hidemenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
